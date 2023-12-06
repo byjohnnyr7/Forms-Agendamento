@@ -1,0 +1,141 @@
+<div class="container">
+	<header class="header">
+		<h1 id="title" class="text-center">Rio Driving School</h1>
+		<p id="description" class="description text-center">
+			Obrigado por usar a nossa plataforma!
+		</p>
+        <link rel="stylesheet" href="./styles.css">
+	</header>
+	<form id="survey-form">
+		<div class="form-group">
+			<label id="name-label" for="name">Nome completo</label>
+			<input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Digite seu nome"
+        required
+      />
+    </div>
+    <div class="form-group">
+        <label id="number-label" for="name">Número<span class="clue">(WhatsApp)</span></label>
+        <input
+    type="text"
+    name="number"
+    id="number"
+    class="form-control"
+    placeholder="Digite seu número"
+    required
+  />
+</div>
+    
+			<div class="form-group">
+				<label id="email-label" for="email">Email</label>
+				<input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Digite seu email"
+        required
+      />
+    </div>
+    
+				<div class="form-group">
+					<label id="number-label" for="number"
+        >Idade<span class="clue">(Opcional)</span></label>
+					<input
+        type="number"
+        name="age"
+        id="number"
+        min="1"
+        max="99"
+        class="form-control"
+        placeholder="Digite sua idade"
+      />
+    </div>
+					<div class="form-group">
+						<p>Escolha a categoria desejada</p>
+						<select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Selecione uma opção</option>
+        <option value="student">G1</option>
+        <option value="job">G2</option>
+        <option value="learner">G FULL</option>
+      </select>
+					</div>
+
+					<div class="form-group">
+						<p>Você possui a transcrição do consulado brasileiro?</p>
+						<label>
+        <input
+          name="user-recommend"
+          value="Yes"
+          type="radio"
+          class="input-radio"
+          
+        />Sim</label>
+						<label>
+        <input
+          name="user-recommend"
+          value="No"
+          type="radio"
+          class="input-radio"
+        />Não</label>
+					</div>
+
+					<div class="form-group">
+                        <label id="number-label" for="number"
+            >Quanto tempo de expericiência de habilitação no brasil?<span class="clue"></span></label>
+                        <input
+            type="text"
+            name="tempo"
+            id="number"
+            min="1"
+            max="99"
+            class="form-control"
+            placeholder="Digite seu tempo de expericiência em anos ou meses"
+          />
+        </div>
+
+					<div class="form-group">
+						<p>
+							Você gostaria de utilizar os nossos serviços de adiantamento?
+							
+						</p>
+
+						<label
+        ><input
+          name="prefer"
+          value="Yes"
+          type="radio"
+          class="input-radio"
+    
+        />Sim</label>
+						<label>
+        <input
+          name="prefer"
+          value="No"
+          type="radio"
+          class="input-radio"
+        />Não</label>
+						
+					</div>
+
+					<div class="form-group">
+						<p>Alguma dúvida especifica?</p>
+						<textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Digite sua dúvida"
+      ></textarea>
+					</div>
+
+					<div class="form-group">
+						<button type="submit" id="submit" class="submit-button">
+        Enviar
+      </button>
+					</div>
+	</form>
+</div>
